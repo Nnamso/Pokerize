@@ -1,0 +1,32 @@
+What is Pokerize
+----------------
+Pokerize is a simple demo of Scheduling Background Jobs in a Rails App.
+
+GEM Dependencies
+----------------
+Pokerize depends on the whenever gem.
+
+you can install it by running "sudo gem install whenever" without the quotes
+
+System Dependencies
+-------------------
+Whenever GEM depends on crontab utility, which is available on all Linux, Unix and Mac OS platforms.
+
+How to Run the demo
+-------------------
+Go to your application root folder
+
+cd /path/to/pokerize_folder
+
+make sure you have installed whenever gem and run this command "whenever --update-crontab poke"
+
+Launch your rails app.
+
+Customizing Schedules
+---------------------
+
+Whenever gem places a schedule.rb file in the config folder of the Rails app.
+
+config/schedule.rb
+
+Edit it as you may and there is more tutorials on customizing it here http://github.com/javan/whenever

@@ -1,0 +1,224 @@
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (1.3ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("schema_migrations")[0m
+  [4;36;1mSQL (1.3ms)[0m   [0;1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreatePokerizes (20100915091621)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mCREATE TABLE "pokerizes" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "pokedby" varchar(255), "poked_at" datetime, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100915091621')[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("pokerizes")[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreatePokerizes (20100915091621)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mDROP TABLE "pokerizes"[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mDELETE FROM schema_migrations WHERE version = '20100915091621'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreatePokerizes (20100915091621)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mCREATE TABLE "pokerizes" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "poked_by" varchar(255), "poked_at" datetime, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100915091621')[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("pokerizes")[0m
+  [4;36;1mPokerize Create (0.5ms)[0m   [0;1mINSERT INTO "pokerizes" ("created_at", "poked_by", "updated_at", "poked_at") VALUES('2010-09-15 09:23:06', '2 Minute Poke Interval', '2010-09-15 09:23:06', '2010-09-15 09:23:05')[0m
+  [4;35;1mPokerize Create (0.4ms)[0m   [0mINSERT INTO "pokerizes" ("created_at", "poked_by", "updated_at", "poked_at") VALUES('2010-09-15 09:23:13', '2 Minute Poke Interval', '2010-09-15 09:23:13', '2010-09-15 09:23:13')[0m
+
+
+Processing PokesController#index (for 127.0.0.1 at 2010-09-15 09:59:55) [GET]
+  [4;36;1mPokerize Load (0.9ms)[0m   [0;1mSELECT * FROM "pokerizes" ORDER BY poked_at DESC[0m
+Rendering pokes/index
+Completed in 14ms (View: 9, DB: 1) | 200 OK [http://0.0.0.0/]
+
+
+Processing PokesController#index (for 127.0.0.1 at 2010-09-15 10:31:46) [GET]
+  [4;36;1mPokerize Load (0.8ms)[0m   [0;1mSELECT * FROM "pokerizes" ORDER BY poked_at DESC[0m
+Rendering template within layouts/application
+Rendering pokes/index
+
+ActionView::TemplateError (undefined method `format_date' for #<ActionView::Base:0x10323aab0>) on line #10 of app/views/pokes/index.html.erb:
+7: <% @pokes.each do |pokes| %>
+8:   <tr>
+9: 	<td><%= pokes.poked_by %></td>
+10: 	<td><%= format_date(pokes.poked_at) %></td>
+11:   </tr>
+12: <% end %>
+13: </table>
+
+    app/views/pokes/index.html.erb:10
+    app/views/pokes/index.html.erb:7:in `each'
+    app/views/pokes/index.html.erb:7
+
+Rendered rescues/_trace (153.8ms)
+Rendered rescues/_request_and_response (1.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PokesController#index (for 127.0.0.1 at 2010-09-15 10:33:21) [GET]
+  [4;36;1mPokerize Load (0.8ms)[0m   [0;1mSELECT * FROM "pokerizes" ORDER BY poked_at DESC[0m
+Rendering template within layouts/application
+Rendering pokes/index
+Completed in 54ms (View: 49, DB: 1) | 200 OK [http://0.0.0.0/]
+
+
+Processing PokesController#index (for 127.0.0.1 at 2010-09-15 10:33:25) [GET]
+  [4;35;1mPokerize Load (0.5ms)[0m   [0mSELECT * FROM "pokerizes" ORDER BY poked_at DESC[0m
+Rendering template within layouts/application
+Rendering pokes/index
+Completed in 7ms (View: 3, DB: 1) | 200 OK [http://0.0.0.0/]
+
+
+Processing PokesController#index (for 127.0.0.1 at 2010-09-15 10:33:26) [GET]
+  [4;36;1mPokerize Load (0.5ms)[0m   [0;1mSELECT * FROM "pokerizes" ORDER BY poked_at DESC[0m
+Rendering template within layouts/application
+Rendering pokes/index
+Completed in 7ms (View: 3, DB: 1) | 200 OK [http://0.0.0.0/]
+
+
+Processing PokesController#index (for 127.0.0.1 at 2010-09-15 10:33:51) [GET]
+  [4;35;1mPokerize Load (0.5ms)[0m   [0mSELECT * FROM "pokerizes" ORDER BY poked_at DESC[0m
+Rendering template within layouts/application
+Rendering pokes/index
+Completed in 7ms (View: 3, DB: 0) | 200 OK [http://0.0.0.0/]
+
+
+Processing PokesController#index (for 127.0.0.1 at 2010-09-15 10:33:52) [GET]
+  [4;36;1mPokerize Load (0.5ms)[0m   [0;1mSELECT * FROM "pokerizes" ORDER BY poked_at DESC[0m
+Rendering template within layouts/application
+Rendering pokes/index
+Completed in 8ms (View: 3, DB: 1) | 200 OK [http://0.0.0.0/]
+
+
+Processing PokesController#index (for 127.0.0.1 at 2010-09-15 10:35:43) [GET]
+  [4;35;1mPokerize Load (0.5ms)[0m   [0mSELECT * FROM "pokerizes" ORDER BY poked_at DESC[0m
+Rendering template within layouts/application
+Rendering pokes/index
+Completed in 8ms (View: 3, DB: 1) | 200 OK [http://0.0.0.0/]
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (1.1ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("schema_migrations")[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreatePokerizes (20100915091621)
+  [4;35;1mSQL (0.5ms)[0m   [0mCREATE TABLE "pokerizes" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "poked_by" varchar(255), "poked_at" datetime, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100915091621')[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("pokerizes")[0m
+
+
+Processing PokesController#index (for 127.0.0.1 at 2010-09-15 10:37:22) [GET]
+  [4;36;1mPokerize Load (0.6ms)[0m   [0;1mSELECT * FROM "pokerizes" ORDER BY poked_at DESC[0m
+Rendering template within layouts/application
+Rendering pokes/index
+Completed in 21ms (View: 16, DB: 1) | 200 OK [http://0.0.0.0/]
+
+
+Processing PokesController#index (for 127.0.0.1 at 2010-09-15 10:37:23) [GET]
+  [4;35;1mPokerize Load (0.4ms)[0m   [0mSELECT * FROM "pokerizes" ORDER BY poked_at DESC[0m
+Rendering template within layouts/application
+Rendering pokes/index
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://0.0.0.0/]
+
+
+Processing PokesController#index (for 127.0.0.1 at 2010-09-15 10:37:25) [GET]
+  [4;36;1mPokerize Load (0.4ms)[0m   [0;1mSELECT * FROM "pokerizes" ORDER BY poked_at DESC[0m
+Rendering template within layouts/application
+Rendering pokes/index
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://0.0.0.0/]
+
+
+Processing PokesController#index (for 127.0.0.1 at 2010-09-15 10:37:26) [GET]
+  [4;35;1mPokerize Load (0.4ms)[0m   [0mSELECT * FROM "pokerizes" ORDER BY poked_at DESC[0m
+Rendering template within layouts/application
+Rendering pokes/index
+Completed in 77ms (View: 1, DB: 0) | 200 OK [http://0.0.0.0/]
+
+
+Processing PokesController#index (for 127.0.0.1 at 2010-09-15 10:38:55) [GET]
+  [4;36;1mPokerize Load (0.4ms)[0m   [0;1mSELECT * FROM "pokerizes" ORDER BY poked_at DESC[0m
+Rendering template within layouts/application
+Rendering pokes/index
+Completed in 6ms (View: 1, DB: 0) | 200 OK [http://0.0.0.0/]
+
+
+Processing PokesController#index (for 127.0.0.1 at 2010-09-15 10:38:56) [GET]
+  [4;35;1mPokerize Load (0.4ms)[0m   [0mSELECT * FROM "pokerizes" ORDER BY poked_at DESC[0m
+Rendering template within layouts/application
+Rendering pokes/index
+Completed in 6ms (View: 1, DB: 0) | 200 OK [http://0.0.0.0/]

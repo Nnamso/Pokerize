@@ -1,0 +1,16 @@
+<% unless @pokes.blank?%>
+<table width="100%" id="data2" cellpadding="0" cellspacing="0">
+  <tr>
+	<th>Poked By</th>
+    <th>Poke Date & Time</th>
+  </tr>
+<% @pokes.each do |pokes| %>
+  <tr>
+	<td><%= pokes.poked_by %></td>
+	<td><%= format_date(pokes.poked_at,true) %></td>
+  </tr>
+<% end %>
+</table>
+<% else %>
+<p class="gt-error">No pokerizes have been made at the moment</p>
+<% end %>
